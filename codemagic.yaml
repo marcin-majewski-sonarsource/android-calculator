@@ -9,9 +9,7 @@ workflows:
         SONAR_PROJECT_KEY: marcin-majewski-sonarsource_android-calculator
     name: Hello world workflow
     scripts:
-        - |
-        # Generate debug build
-        ./gradlew assembleDebug        
+        - ./gradlew assembleDebub        
         - |
         # Generate and upload code analysis report
         ./gradlew sonarqube \
