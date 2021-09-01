@@ -9,7 +9,4 @@ workflows:
     scripts:
         - echo "Hello World!"
         - name: Run sonarqube
-          script: ./gradlew sonarqube \
-          -Dsonar.projectKey=marcin-majewski-sonarsource_android-calculator \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=$SONAR_TOKEN
+          script: ./gradlew sonarqube -Dsonar.projectKey=marcin-majewski-sonarsource_android-calculator -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
