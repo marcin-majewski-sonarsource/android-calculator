@@ -4,7 +4,7 @@ workflows:
       groups:
         - example-group
       vars:
-        SONAR_TOKEN: Encrypted($SONAR_TOKEN)
+        SONAR_TOKEN: Encrypted(Z0FBQUFBQmhMMjRVZGVjaHdlaDB6RkdoNkVHaVUzNHg4NDR0bGJzaXNseXlPbGt0aFl5dldmdkgycE1KZlBpODlRcDFHODhHZ004SHFwV3gwOWNaRWFqbGR0NjM5ODV3UUEzeVJXanlnd1Flb05SQVNLdmh2TTJqN2EzUDhheFl4U2ZNU0JRYWR4ejQ=)
     name: Hello world workflow
     scripts:
         - echo "Hello World!"
