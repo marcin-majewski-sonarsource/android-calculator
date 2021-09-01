@@ -1,5 +1,10 @@
 workflows:
   hello-world:
+    environment:
+      groups:
+        - example-group
+      vars:
+        SONAR_TOKEN: Encrypted(...)
     name: Hello world workflow
     scripts:
         - echo "Hello World!"
