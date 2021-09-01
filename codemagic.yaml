@@ -9,16 +9,13 @@ workflows:
         SONAR_PROJECT_KEY: marcin-majewski-sonarsource_android-calculator
     name: Hello world workflow
     scripts:
-        - echo "Hello World!"
-        - name: Run sonarqube
-          script:
-            - |
-              # Generate debug build
-              ./gradlew assembleDebug        
-            - |
-              # Generate and upload code analysis report
-              ./gradlew sonarqube \
-              -Dsonar.projectKey=$SONAR_PROJECT_KEY \
-              -Dsonar.organization=$SONAR_ORG_KEY \
-              -Dsonar.host.url=https://mmsc.eu.ngrok.io \
-              -Dsonar.login=$SONAR_TOKEN \
+        - |
+        # Generate debug build
+        ./gradlew assembleDebug        
+        - |
+        # Generate and upload code analysis report
+        ./gradlew sonarqube \
+        -Dsonar.projectKey=$SONAR_PROJECT_KEY \
+        -Dsonar.organization=$SONAR_ORG_KEY \
+        -Dsonar.host.url=https://mmsc.eu.ngrok.io \
+        -Dsonar.login=$SONAR_TOKEN \
