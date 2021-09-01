@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initializeViewVariables()
     {
+        System.out.println("Testing code smell detection");
         buttonNumber0 = (Button) findViewById(R.id.button_zero);
         buttonNumber1 = (Button) findViewById(R.id.button_one);
         buttonNumber2 = (Button) findViewById(R.id.button_two);
