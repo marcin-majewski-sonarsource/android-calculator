@@ -8,3 +8,5 @@ workflows:
     name: Hello world workflow
     scripts:
         - echo "Hello World!"
+        - name: Run sonarqube
+          script: ./gradlew sonarqube
